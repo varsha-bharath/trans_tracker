@@ -1,0 +1,13 @@
+
+<% for vehicle_record in @vehicle_records %>
+	<ul>
+		<li><%= vehicle_record.record_type %></li>
+		<li><%= vehicle_record.expiration_date %>
+		<%= link_to "Edit",edit_vehicle_record_path(@vehicle_record.id) %>
+
+		</ul>
+
+	<% end -%>
+<br/>
+<%= link_to "Back", vehicles_path %>
+
